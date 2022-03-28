@@ -1,0 +1,156 @@
+/** BODY **/
+body {
+    max-width: 1200px;
+    margin: 0; 
+}
+
+/** HEADER **/
+header {   
+    background: black;
+    margin: 10px;
+    padding: 10px;     
+}
+.nav { 
+    margin: 10px;
+    background-color: darkslategrey; 
+    display: flex;   
+}
+.block {
+    background-color: red;
+    padding: 10px;
+    margin: 10px;    
+}
+.nav2 {
+    margin: 10px;
+    background-color: orange;
+    display: flex;     
+}
+.block3 {
+    width: 100%;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+/** MAIN **/
+main {   
+    background: black;
+    margin: 10px;
+    padding: 10px; 
+    display: flex;
+    flex-direction: row;
+}
+.article {
+    background-color: darkslateblue;
+    padding: 10px;
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+.column {
+    background-color: darkslateblue;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;              
+}
+.section {   
+    background-color: blue;
+    padding: 10px;
+    margin: 10px; 
+    flex-grow: 1;                            
+}
+.row {
+    background-color: skyblue;
+    padding: 10px;
+    margin: 10px;      
+}
+.aside {
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+}
+.sectionaside {
+    background-color: lightyellow ;
+    margin: 10px;
+    padding: 10px;
+}
+
+/** FOOTER **/
+footer {   
+    background: black;
+    margin: 10px;
+    padding: 10px;     
+}
+.foot {
+    margin: 10px;
+    padding: 10px;
+    background-color: goldenrod;
+    display: flex;  
+}
+
+
+/** DESKTOP VERSION **/
+@media (min-width: 1025px) {
+
+/** HEADER **/
+.block {
+    width: 20%;       
+}
+.center {
+    width: 60%;
+} 
+
+/** MAIN **/
+.article {
+    width: 60%;      
+}
+.section {
+    width: 30%;                              
+}
+.aside {
+    width: 35%;
+}
+}
+
+
+/** TABLET VERSION **/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+/** HEADER **/
+.block {
+    width: 20%;    
+}
+.center {
+    width: 60%;
+}
+
+/** MAIN **/
+main {
+    background-color: yellow;
+    flex-direction: column;
+}
+.section {
+    width: 30%;                              
+}
+}
+
+
+/* MOBILE VERSION */
+@media  (max-width: 767px) {
+
+  
+/** HEADER **/
+.nav {       
+    flex-direction: column;  
+}
+    
+/** MAIN **/
+main {
+    background-color: yellow;
+    flex-direction: column;
+}
+.column {
+    flex-direction: column;           
+}
+}
